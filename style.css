@@ -1,0 +1,121 @@
+body {
+    background-color: black; 
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card {
+    width: 85%;
+    max-width: 400px;
+    background-image: url('pictures/ciel.jpeg'); /* Remplace 'chemin/vers/ton-image.jpg' par le chemin réel de ton image */
+
+    color: #2c2c54; /* Bleu foncé pour le texte */
+    margin: auto;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 22vh;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background: #f0f4f8; /* Gris très clair */
+    color: #333;
+    padding: 8px 20px;
+    height: 45px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.search button {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: skyblue; /* Lavande douce */
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search button img {
+    width: 50%;
+    height: 50%;
+}
+
+.weather-icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+.weather h1 {
+    font-size: 60px;
+    font-weight: 500;
+    color: #2c3e50; /* Couleur profonde pour bien contraster */
+}
+
+.weather h2 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: -5px;
+    color: #030303;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-top: 40px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 35px;
+    margin-right: 8px;
+}
+
+.humidity, .wind {
+    font-size: 20px;
+    color: #2c2c54;
+}
+
+.weather {
+    display: none;
+}
+
+.error {
+    margin-left: 10px;
+    color: #ff4c4c; /* Rouge doux pour les erreurs */
+    display: none;
+
+
+}
+.datetime {
+    text-align: center;
+    font-size: 16px;
+    font-style: italic;
+    color: #333;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
